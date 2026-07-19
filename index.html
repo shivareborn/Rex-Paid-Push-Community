@@ -423,7 +423,7 @@
     <div class="hero-visual">
       <div class="hero-card">
         <div class="rank-badge"><div class="rank-icon"><i class="fas fa-crown"></i></div><div><h3>Heroic Tier</h3><span style="color:var(--text-muted);font-size:0.8rem;">Most Popular</span></div></div>
-        <div class="price-tag">₹270</div>
+        <div class="price-tag">₹360</div>
         <ul class="features-mini">
           <li><i class="fas fa-check-circle"></i> Bronze → Heroic </li>
           <li><i class="fas fa-check-circle"></i> 48-72 Hours Delivery</li>
@@ -440,7 +440,7 @@
       <div class="section-header">
         <span class="section-label">Get Started</span>
         <h2 class="section-title">Order & Pay Instantly</h2>
-        <p class="section-subtitle">Fill details below. Click your payment app to open directly with phone number pre-filled.</p>
+        <p class="section-subtitle">Fill details below. Click your payment app to open directly with UPI pre-filled.</p>
       </div>
       <div class="order-grid">
         <div class="order-form-card">
@@ -457,19 +457,20 @@
           </div>
           
           <div class="total-display">
-            <span class="total-label"><i class="fas fa-calculator" style="color:var(--gold);margin-right:6px;"></i> Total Amount (₹3/star)</span>
+            <span class="total-label"><i class="fas fa-calculator" style="color:var(--gold);margin-right:6px;"></i> Total Amount (₹4/star)</span>
             <span class="total-value" id="totalDisplay">₹4</span>
           </div>
           <button class="btn-calculate" onclick="updateTotal()"><i class="fas fa-sync-alt"></i> Recalculate Total</button>
 
+          <!-- Payment Section - FIXED -->
           <div class="payment-section">
             <h3><i class="fas fa-credit-card"></i> Step 2: Tap App to Pay</h3>
-            <p class="payment-subtitle">Pay to: <strong>ARUN PRASAD S</strong> | Phone: <strong>9605880079</strong></p>
+            <p class="payment-subtitle">Pay to: <strong>Akshay Reghu</strong> | UPI: <strong>ashtamireghu@okicici</strong></p>
             
             <div class="account-name-display">
               <p><i class="fas fa-user-check" style="color:var(--gold);"></i> Pay to Account</p>
               <div class="acc-name">Akshay Reghu</div>
-              <div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 4px;">📱 9605880079</div>
+              <div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 4px;">📱 ashtamireghu@okicici</div>
             </div>
             
             <div class="payment-methods">
@@ -498,14 +499,14 @@
               </button>
             </div>
 
-            <p style="text-align:center;color:var(--text-muted);font-size:0.7rem;margin-top:4px;">📱 Click any app — opens directly with phone number 9605880079</p>
+            <p style="text-align:center;color:var(--text-muted);font-size:0.7rem;margin-top:4px;">📱 Click any app — opens with UPI: ashtamireghu@okicici</p>
 
-            <!-- QR Code -->
+            <!-- QR Code - FIXED -->
             <div class="payment-or">OR Scan QR Code</div>
             <div class="qr-section">
               <p><i class="fas fa-qrcode" style="color:var(--gold);margin-right:6px;"></i> Scan with any UPI app</p>
               <div class="qr-code-container">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=9605880079@upi&pn=ARUN%20PRASAD%20S&am=3&cu=INR" 
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=ashtamireghu@okicici&pn=AKSHAY%20REGHU&am=3&cu=INR" 
                      alt="UPI QR Code" id="qrCodeImage" width="180" height="180">
                 <div class="qr-label">Akshay Reghu<br>ashtamireghu@okicici</div>
               </div>
@@ -531,7 +532,7 @@
           <h3><i class="fas fa-info-circle" style="color:var(--gold);"></i> How It Works</h3>
           <ul class="info-list">
             <li><div class="info-icon"><i class="fas fa-1"></i></div><div class="info-text"><strong>Fill Order Details</strong><span>Enter IGN & star count. Total auto-calculates.</span></div></li>
-            <li><div class="info-icon"><i class="fas fa-2"></i></div><div class="info-text"><strong>Tap App to Pay</strong><span>Click GPay/PhonePe/Paytm/FamPay — opens with number pre-filled.</span></div></li>
+            <li><div class="info-icon"><i class="fas fa-2"></i></div><div class="info-text"><strong>Tap App to Pay</strong><span>Click GPay/PhonePe/Paytm/FamPay — opens with UPI pre-filled.</span></div></li>
             <li><div class="info-icon"><i class="fas fa-3"></i></div><div class="info-text"><strong>Send via WhatsApp</strong><span>Click send — your order goes directly to our WhatsApp.</span></div></li>
             <li><div class="info-icon"><i class="fas fa-4"></i></div><div class="info-text"><strong>Boosting Starts</strong><span>We verify payment & start within 30 minutes.</span></div></li>
           </ul>
@@ -561,23 +562,23 @@
         <div class="package-card">
           <span class="popular-badge">Popular</span>
           <div class="package-icon"><i class="fas fa-gem"></i></div>
-          <h3>Diamond</h3><div class="package-price">₹75 <span>/ tier</span></div>
+          <h3>Diamond</h3><div class="package-price">₹100 <span>/ tier</span></div>
           <ul><li><i class="fas fa-check-circle"></i> Diamond I → Heroic</li><li><i class="fas fa-check-circle"></i> 24-48 Hours</li><li><i class="fas fa-check-circle"></i> Pro Booster (K/D 3.5+)</li><li><i class="fas fa-check-circle"></i> Stream Available</li></ul>
-          <button class="btn btn-outline" onclick="sendPackageWhatsApp('Diamond', '₹75')"><i class="fab fa-whatsapp"></i> Order Diamond</button>
+          <button class="btn btn-outline" onclick="sendPackageWhatsApp('Diamond', '₹100')"><i class="fab fa-whatsapp"></i> Order Diamond</button>
         </div>
         <div class="package-card">
           <span class="popular-badge">Best Value</span>
           <div class="package-icon"><i class="fas fa-crown"></i></div>
-          <h3>Elite Heroic</h3><div class="package-price">₹75 <span>/ push</span></div>
+          <h3>Elite Heroic</h3><div class="package-price">₹100 <span>/ push</span></div>
           <ul><li><i class="fas fa-check-circle"></i> Heroic → Elite Heroic</li><li><i class="fas fa-check-circle"></i> 48-72 Hours</li><li><i class="fas fa-check-circle"></i> Top 100 Players</li><li><i class="fas fa-check-circle"></i> Free Headshot Guide</li></ul>
-          <button class="btn btn-outline" onclick="sendPackageWhatsApp('Elite Heroic', '₹75')"><i class="fab fa-whatsapp"></i> Order Heroic</button>
+          <button class="btn btn-outline" onclick="sendPackageWhatsApp('Elite Heroic', '₹100')"><i class="fab fa-whatsapp"></i> Order Heroic</button>
         </div>
         <div class="package-card">
           <span class="popular-badge">Elite</span>
           <div class="package-icon"><i class="fas fa-star"></i></div>
-          <h3>Grandmaster</h3><div class="package-price">₹1,499 <span>/ push</span></div>
-          <ul><li><i class="fas fa-check-circle"></i> Grandmaster Secure Push</li><li><i class="fas fa-check-circle"></i> 3-5 Days</li><li><i class="fas fa-check-circle"></i> Double Booster Team</li><li><i class="fas fa-check-circle"></i> Priority Support</li></ul>
-          <button class="btn btn-outline" onclick="sendPackageWhatsApp('Grandmaster', '₹1,499')"><i class="fab fa-whatsapp"></i> Order Grandmaster</button>
+          <h3>Grandmaster</h3><div class="package-price">₹2,000 <span>/ push</span></div>
+          <ul><li><i class="fas fa-check-circle"></i> Grandmaster Secure Push</li><li><i class="fas fa-check-circle"></i> Time Depends Days</li><li><i class="fas fa-check-circle"></i> Double Booster Team</li><li><i class="fas fa-check-circle"></i> Priority Support</li></ul>
+          <button class="btn btn-outline" onclick="sendPackageWhatsApp('Grandmaster', '₹2,000')"><i class="fab fa-whatsapp"></i> Order Grandmaster</button>
         </div>
       </div>
     </div>
@@ -606,11 +607,11 @@
   </footer>
 
   <script>
+    // ===== FIXED: All payment details now use ashtamireghu@okicici =====
     const whatsappNumber = "919496934936";
-    const paymentNumber = "9605880079";
-    const payeeName = "ARUN PRASAD S";
-    const upiID = paymentNumber + "@upi";
-    let currentAmount = 3;
+    const upiID = "ashtamireghu@okicici";
+    const payeeName = "AKSHAY REGHU";
+    let currentAmount = 4;
 
     // App names for toast messages
     const appNames = {
@@ -625,36 +626,35 @@
       const totalDisplay = document.getElementById('totalDisplay');
       let stars = parseInt(starInput.value);
       if (isNaN(stars) || stars < 1) { stars = 1; starInput.value = 1; }
-      currentAmount = stars * 3;
+      currentAmount = stars * 4;
       totalDisplay.textContent = '₹' + currentAmount.toLocaleString('en-IN');
       updateQRCode();
     }
 
+    // ===== FIXED: payWithApp now uses the correct UPI ID =====
     function payWithApp(app) {
       const amount = currentAmount;
       const encodedName = encodeURIComponent(payeeName);
       
-      // Use phone number as UPI ID for all apps
-      const upiHandle = paymentNumber + "@upi";
-      
       let deepLink = '';
-      let fallbackLink = `upi://pay?pa=${upiHandle}&pn=${encodedName}&am=${amount}&cu=INR&mode=02&purpose=00&orgid=000000&mc=0000`;
+      let fallbackLink = `upi://pay?pa=${upiID}&pn=${encodedName}&am=${amount}&cu=INR`;
       
-      // App-specific deep links using phone number UPI
+      // App-specific deep links
       switch(app) {
         case 'gpay':
-          deepLink = `tez://upi/pay?pa=${upiHandle}&pn=${encodedName}&am=${amount}&cu=INR&mode=02&purpose=00&orgid=000000&mc=0000`;
+          deepLink = `tez://upi/pay?pa=${upiID}&pn=${encodedName}&am=${amount}&cu=INR`;
           break;
         case 'phonepe':
-          deepLink = `phonepe://pay?pa=${upiHandle}&pn=${encodedName}&am=${amount}&cu=INR&mode=02&purpose=00&orgid=000000&mc=0000`;
+          deepLink = `phonepe://pay?pa=${upiID}&pn=${encodedName}&am=${amount}&cu=INR`;
           break;
         case 'paytm':
-          deepLink = `paytmmp://pay?pa=${upiHandle}&pn=${encodedName}&am=${amount}&cu=INR&mode=02&purpose=00&orgid=000000&mc=0000`;
+          deepLink = `paytmmp://pay?pa=${upiID}&pn=${encodedName}&am=${amount}&cu=INR`;
           break;
         case 'fampay':
-          // FamPay uses standard UPI protocol
-          deepLink = `fampay://upi/pay?pa=${upiHandle}&pn=${encodedName}&am=${amount}&cu=INR&mode=02&purpose=00&orgid=000000&mc=0000`;
+          deepLink = `fampay://upi/pay?pa=${upiID}&pn=${encodedName}&am=${amount}&cu=INR`;
           break;
+        default:
+          deepLink = fallbackLink;
       }
       
       // Try app-specific deep link first
@@ -671,10 +671,11 @@
       showToast('Opening ' + (appNames[app] || 'payment') + '...');
     }
 
+    // ===== FIXED: QR Code updates with correct UPI ID =====
     function updateQRCode() {
       const amount = currentAmount;
       const encodedName = encodeURIComponent(payeeName);
-      const qrData = `upi://pay?pa=${upiID}&pn=${encodedName}&am=${amount}&cu=INR&mode=02&purpose=00&orgid=000000&mc=0000`;
+      const qrData = `upi://pay?pa=${upiID}&pn=${encodedName}&am=${amount}&cu=INR`;
       document.getElementById('qrCodeImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(qrData)}`;
     }
 
@@ -699,6 +700,7 @@
       setTimeout(() => { toast.classList.remove('show'); }, 3000);
     }
 
+    // ===== FIXED: WhatsApp message shows correct payee =====
     function sendOrderViaWhatsApp() {
       const clientName = document.getElementById('clientName').value.trim();
       const starCount = document.getElementById('starCount').value;
@@ -711,14 +713,14 @@
       
       let stars = parseInt(starCount);
       if (isNaN(stars) || stars < 1) stars = 1;
-      const total = stars * 3;
+      const total = stars * 4;
       
       const message = `🔥 *NEW RANK PUSH ORDER* 🔥%0A%0A` +
         `👤 *Client Name:* ${clientName}%0A` +
         `⭐ *Star Count:* ${stars}%0A` +
         `💰 *Total Amount:* ₹${total}%0A%0A` +
         `💳 *Payment to:* ${payeeName}%0A` +
-        `📱 *Phone/UPI:* ${paymentNumber}%0A%0A` +
+        `📱 *UPI ID:* ${upiID}%0A%0A` +
         `✅ Please verify payment and confirm order.`;
       
       window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
@@ -735,7 +737,7 @@
         `🎯 *Package:* ${packageName}%0A` +
         `💵 *Price:* ${price}%0A` + nameInfo +
         `💳 *Payment to:* ${payeeName}%0A` +
-        `📱 *Phone/UPI:* ${paymentNumber}%0A%0A` +
+        `📱 *UPI ID:* ${upiID}%0A%0A` +
         `✅ Please confirm order.`;
       
       window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
